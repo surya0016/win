@@ -1,0 +1,25 @@
+1.Write a program to check if the number is even or odd.
+
+2. Write a program to accept 3 sides of  triangle and check whether the triangle is scalene , 
+isosceles ,or equilateral triangle.
+
+
+3. Write a program to accept student details (First name , Middle name, Last name, Course , 
+Semester, and marks of 5 subjects) and display the students report card which has the 
+student details grade and status as pass or fail. 
+GRADE CRITERIA: 
+Percentage>=90 → O GRADE 
+Percentage>=80 → A GRADE 
+Percentage>=70 → B GRADE 
+Percentage>=60 → C GRADE 
+Percentage>=50 → D GRADE  
+Percentage>=40 → E GRADE 
+Percentage<40   → F GRADE 
+NOTE: O to E grade should have the status as PASS and F grade should have the status 
+as FAIL
+
+
+4. Write a program to implement a nested conditional statement.(if num  >0  and even then find practorial if its odd print num is odd else if num<0 print its negative)
+
+
+5. Write a program to implement a two player ROCK , PAPER and SCISSOR game. 

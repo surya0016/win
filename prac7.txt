@@ -1,0 +1,26 @@
+1. CREATE A DICTIONARY
+
+2.len
+
+3.access dictionary items: dname[key] or get(key)
+
+4.change items
+
+5. add items
+
+6. remove items
+    -pop(key)
+    - popitem()
+    - del
+    -clear()
+
+7. keys()
+
+8. values()
+
+9. items()
+
+10. copy() or dict(diname)
+
+11.nested dictionary
+	-access items-diname[pkey][ckey]

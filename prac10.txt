@@ -1,0 +1,4 @@
+1.Write a python program to catch ZeroDivisionError and NameError. 
+
+2.Write a python program to catch index error, type error, value error and use of finally 
+block. 

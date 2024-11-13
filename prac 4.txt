@@ -1,0 +1,14 @@
+Prac 4
+
+1. Write a program to accept a number & display the factorial of the number
+
+
+
+2. Write a program to accept a number and check if its palindrome or not
+
+
+
+3. Write a program to create a menu driven banking program. The user should be able to deposit, withdraw & check the balance with necessary condition in place
+
+
+4.Write a program to accept a number from the user & calculate the sum of the numbers until user enters zero.

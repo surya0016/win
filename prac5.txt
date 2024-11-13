@@ -1,0 +1,43 @@
+ String operations
+
+1. concatenation & repetition
+
+2. slicing
+
+3. len()
+
+4. capitalize()
+
+5. center(lenofstr, fillinchar)
+
+6.split(splitonchar)
+
+7. find(item)
+
+8.replace(item, with)
+
+9.index(item)
+
+10.count(item)
+
+11. join(iterable)
+
+12.strip()
+
+13. upper()
+
+14.lower()
+
+15. isupper()
+
+16.islower()
+
+17. isalnum()
+
+18. isdigit()
+
+19. isspace()
+
+20. format()
+
+21. swapcase()

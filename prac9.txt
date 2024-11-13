@@ -1,0 +1,20 @@
+Programs to read and write files.
+
+1. Write a python program to input file nums.txt  with some numbers and create a file 
+results.txt which contains the sum , mean and the square of numbers in the input file. 
+
+OS MODULES
+
+1. Get the current working directory.
+
+2. Change current working directory. 
+
+3. Create new Directory.
+
+4. List files and directories in current directory. 
+
+5. Change the name of existing directory. 
+
+6. To Remove the Existing Directory
+
+7. To Remove a File From a Current Directory
