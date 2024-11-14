@@ -1,17 +1,86 @@
 1. Implement Factorial using def
+def factorial(n): 
+if n < 0: 
+return "Factorial is not defined for negative numbers." 
+elif n == 0 or n == 1: 
+return 1 
+else: 
+result = 1 
+for i in range(1, n + 1): 
+result *= i 
+return result 
+num = int(input("Enter a number: ")) 
+print(f"The factorial of {num} is: {factorial(num)}")
 
-2. Implement Factorial using anonymous(lambda) functions   
+2. Implement Factorial using anonymous(lambda) functions  
+
+factorial = (lambda f: (lambda x: f(f, x)))(lambda f, x: 1 if x == 0 or x 
+== 1 else x * f(f, x - 1)) 
+num = int(input("Enter a number: ")) 
+print(f"The factorial of {num} is: {factorial(num)}") 
 
 3.  Write a program to display the payslip of an employees , 
 where employee id and basic pay  is passed to the function ;
  DA=90% basic pay , HRA=40% basic pay , TA=20% 
 basic pay , and NET SALARY=DA + HRA + TA + basic  pay. 
 
+print("FCS2425019") 
+def generate_payslip(emp_id, basic_pay): 
+DA = 0.90 * basic_pay   
+HRA = 0.40 * basic_pay   
+TA = 0.20 * basic_pay   
+net_salary = basic_pay + DA + HRA + TA 
+print(f"Employee ID: {emp_id}") 
+print(f"Basic Pay: {basic_pay}") 
+print(f"DA (90% of Basic Pay): {DA}") 
+print(f"HRA (40% of Basic Pay): {HRA}") 
+print(f"TA (20% of Basic Pay): {TA}") 
+print(f"Net Salary: {net_salary}") 
+emp_id = int(input("Enter Employee ID: ")) 
+basic_pay = float(input("Enter Basic Pay: ")) 
+generate_payslip(emp_id, basic_pay)
+
 4. Implement a Function in python to check if a number is a 
 KRISHNAMURTHY number or not. 
 
-5. Implement recursive function to calculate factorial of number.
+def factorial(n): 
+    result = 1 
+    for i in range(1, n + 1): 
+        result *= i 
+    return result 
+ 
+ 
+def is_krishnamurthy_number(num): 
+     
+    original_num = num 
+    sum_factorial = 0 
+     
+    
+    while num > 0: 
+        digit = num % 10   
+        sum_factorial += factorial(digit)   
+        num //= 10  
+     
+     
+    if sum_factorial == original_num: 
+        return True 
+    else: 
+        return False 
+ 
+num = int(input("Enter a number: ")) 
+if is_krishnamurthy_number(num): 
+print(f"{num} is a Krishnamurthy number.") 
+else: 
+print(f"{num} is not a Krishnamurthy number.") 
 
-6.Implement conversion from Decimal to Binary using recursive 
-function.
+5. Implement recursive function to calculate factorial of number.
+def factorial(n): 
+if n == 0 or n == 1: 
+return 1 
+else: 
+return n * factorial(n - 1) 
+num = int(input("Enter a number: ")) 
+print(f"The factorial of {num} is: {factorial(num)}")
+
+
 

@@ -1,26 +1,63 @@
 1. CREATE A DICTIONARY
+my_dict = { 
+"name": "Alice", 
+"age": 25, 
+"city": "New York" 
+} 
 
 2.len
+print(len(my_dict))
 
 3.access dictionary items: dname[key] or get(key)
+print(my_dict["name"])   
+print(my_dict.get("age"))
 
 4.change items
 
+my_dict["age"] = 26 print(my_dict) 
+
 5. add items
+my_dict["occupation"] = "Engineer" 
+print(my_dict)
 
 6. remove items
-    -pop(key)
-    - popitem()
-    - del
-    -clear()
+    -pop(key) -pop(key) 
+my_dict.pop("city") 
+print(my_dict) 
+
+    - popitem()- popitem() 
+my_dict.popitem() 
+print(my_dict) 
+
+    - del del my_dict["age"]
+
+    -clear() my_dict.clear() 
+print(my_dict)
 
 7. keys()
 
+my_dict = {"name": "Alice", "age": 26, "city": "New York"} 
+print(my_dict.keys()) 
+
 8. values()
+print(my_dict.values()) 
 
 9. items()
+print(my_dict.items()) 
 
 10. copy() or dict(diname)
+copy_dict = my_dict.copy() 
+print(copy_dict)
 
 11.nested dictionary
 	-access items-diname[pkey][ckey]
+family = { 
+"child1": { 
+"name": "Bob", 
+"age": 10 
+}, 
+"child2": { 
+"name": "Sue", 
+"age": 12 
+} 
+}

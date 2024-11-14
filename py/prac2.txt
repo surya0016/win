@@ -1,7 +1,41 @@
 1.Write a program to check if the number is even or odd.
 
+code:
+
+n=int(input("Enter a number")) 
+
+if n%2==0: 
+
+    print(f' {n} is even') 
+
+else: 
+
+    print(f' {n} is odd') 
+
 2. Write a program to accept 3 sides of  triangle and check whether the triangle is scalene , 
 isosceles ,or equilateral triangle.
+
+code:
+
+s1=int(input("Enter value of side1"))  
+
+s2=int(input("Enter value of side2"))  
+
+s3=int(input("Enter value of side3"))  
+
+if(s1==s2==s3): 
+
+    print("The given Triangle is Equilateral")  
+
+elif(s1 == s2 or s2 == s3 or s1 == s3):  
+
+    print("The given triangle is isoceles")  
+
+else:  
+
+    print("The given triangle is scalar")
+
+
 
 
 3. Write a program to accept student details (First name , Middle name, Last name, Course , 
@@ -18,8 +52,76 @@ Percentage<40   → F GRADE
 NOTE: O to E grade should have the status as PASS and F grade should have the status 
 as FAIL
 
+code:
+
+name = input("Enter the Name: ") 
+mname = input("Enter the Middle Name: ") 
+lname = input("Enter the Last Name: ") 
+course = input("Enter the Course: ") 
+sem = input("Enter the Semester: ") 
+m1 = int(input("Enter the marks in Python: ")) 
+m2 = int(input("Enter the marks in FMS: ")) 
+m3 = int(input("Enter the marks in BM: ")) 
+m4 = int(input("Enter the marks in WP: ")) 
+m5 = int(input("Enter the marks in EV: ")) 
+p = (m1 + m2 + m3 + m4 + m5) / 500 * 100 
+if p >= 90: 
+    grade = "O" 
+elif 80 <= p < 90: 
+    grade = "A" 
+elif 70 <= p < 80:
+    grade = "B"
+elif 60 <= p < 70: 
+    grade = "C" 
+elif 50 <= p < 60: 
+    grade = "D" 
+elif 40 <= p < 50: 
+    grade = "E" 
+else: 
+    grade = "F" 
+print(f"Name: {name} {mname} {lname}") 
+print(f"Course: {course}") 
+print(f"Semester: {sem}") 
+print(f"Percentage: {p}%") 
+print(f"Grade: {grade}") 
+print("Status: Pass" if grade != "F" else "Status: Fail")
 
 4. Write a program to implement a nested conditional statement.(if num  >0  and even then find practorial if its odd print num is odd else if num<0 print its negative)
 
+num = int(input("Enter a number: ")) 
+if num > 0:
+    if num % 2 == 0:
+        factorial = 1 
+        for i in range(1, num + 1):
+            factorial *= i 
+        print(f"The number is positive and even. Factorial of {num} is {factorial}.")  
+    else:  
+        print(f"The number {num} is positive and odd.") 
+else: 
+    print(f"The number {num} is negative.")
+
 
 5. Write a program to implement a two player ROCK , PAPER and SCISSOR game. 
+
+print("Welcome to Rock, Paper, Scissors!") 
+print("Players, please choose one of the following options: rock,paper, or scissors.\n")  
+player1_choice = input("Player 1, enter your choice: ").lower() 
+player2_choice = input("Player 2, enter your choice: ").lower() 
+valid_choices = ["rock", "paper", "scissors"] 
+if player1_choice not in valid_choices or player2_choice not in valid_choices: 
+    print("Invalid input! Please enter rock, paper, or scissors.") 
+else: 
+    if player1_choice == player2_choice: 
+        print("It's a tie!") 
+    elif player1_choice == "rock" and player2_choice == "scissors": 
+        print("Player 1 wins! Rock beats Scissors.") 
+    elif player1_choice == "scissors" and player2_choice == "paper": 
+        print("Player 1 wins! Scissors beats Paper.") 
+    elif player1_choice == "paper" and player2_choice == "rock": 
+        print("Player 1 wins! Paper beats Rock.")
+    elif player2_choice == "rock" and player1_choice == "scissors": 
+        print("Player 2 wins! Rock beats Scissors.") 
+    elif player2_choice == "scissors" and player1_choice == "paper": 
+        print("Player 2 wins! Scissors beats Paper.") 
+    elif player2_choice == "paper" and player1_choice == "rock": 
+        print("Player 2 wins! Paper beats Rock.")

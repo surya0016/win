@@ -3,11 +3,33 @@ Programs to read and write files.
 1. Write a python program to input file nums.txt  with some numbers and create a file 
 results.txt which contains the sum , mean and the square of numbers in the input file. 
 
+f1= open(r"C:\Users\Justin\Documents\NB\num.txt", "w") 
+f2= open(r"C:\Users\Justin\Documents\NB\num.txt", "r") 
+f3=open(r"C:\Users\Justin\Documents\NB\result.txt", "w") 
+num=int(input("How many numbers you wish to enter?")) 
+for i in range(1,num+1): 
+n=input(f"Enter number{i}") 
+f1.write(n+"\n") 
+f1.close() 
+sum=0 
+sumofsq=0 
+for x in f2: 
+sum+=int(x) 
+sumofsq+=int(x)**2 
+mean=sum/num 
+f3.write(f"Sum of nums {sum}") 
+f3.write(f"Sum of sq {sumofsq}") 
+f3.write(f"Mean of nums {mean}") 
+f2.close() 
+f3.close() 
+
 OS MODULES
 
 1. Get the current working directory.
+os.getcwd() 
 
 2. Change current working directory. 
+os.chdir("C:\\Users\\Justin\\Documents\\Empty") 
 
 3. Create new Directory.
 

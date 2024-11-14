@@ -1,14 +1,107 @@
 Prac 4
 
 1. Write a program to accept a number & display the factorial of the number
+#Accpet a number and caluclate it's factorial 
+while True: 
+    n = int(input("Enter number : ")) 
+    if n == 0 or n == 1: 
+        print(f"The factorial of the given number {n} is 1") 
+        break 
+    elif n<0: 
+        print(f"Factorial of a negative number cannot be found") 
+    else: 
+        fact = 1 
+        i = 1 
+        while (i<=n): 
+            fact*=i 
+            i+=1 
+        print(f"The factorial of the given number {n} is {fact}") 
+        break 
 
 
 
 2. Write a program to accept a number and check if its palindrome or not
+#Accept a number from user and check if it is a palindrome or not 
+n = int(input("Enter number : ")) 
+while n < 10: 
+    print("Palindrome cannot be made out for a single digit number") 
+    n = int(input("Enter number : ")) 
+num = n 
+rev = 0 
+while n != 0: 
+    digit = n % 10 
+    rev = rev * 10 + digit 
+    n = n // 10 
+if num == rev: 
+    print("The given number is a palindrome") 
+else: 
+    print("The given number is not a palindrome") 
+
+3. Write a program to accept a number from the user and calculate the sum of the number until user enters the number zero
+
+#Program to accept a number from the user & calculate the sum of the numbers until user enters zero  
+
+print("Enter numbers to sum, Enter the number 0 to see final result")  
+
+s = 0  
+
+while True:  
+
+    n = int(input("Enter number : "))  
+
+    if n == 0:  
+
+            break  
+
+    s+=n  
+
+print(f"The sum of your entered numbers is {s}") 
+
+
+4. Write a program to create a menu driven banking program. The user should be able to deposit, withdraw & check the balance with necessary condition in place
+
+#Program for menu driven bank transactions 
+acc_no = input("Enter account number : ") 
+balance = int(input("Enter account balance : ")) 
+while balance<1000: 
+    print("Minimum balance must be 1000") 
+    balance = int(input("Enter account balance : ")) 
+print() 
+while True: 
+    print("Choose a transaction") 
+    print("1. Deposit      2. Withdraw     3. Check balance    4. Exit") 
+    c = int(input("Your chosen transaction (1, 2, 3 or 4 ) : ")) 
+    print() 
+    if c == 1: 
+        dep = int(input("Enter deposit amount : ")) 
+        while dep<0: 
+            print("Deposit amount cannot be negative") 
+            dep = int(input("Enter deposit amount : ")) 
+        balance+=dep 
+        print("Your amount has been deposited") 
+        print() 
+    elif c == 2: 
+        if balance == 1000: 
+            print(f"You cannot withdraw any amount out of your minimum required balance, Your current account balance is {balance}") 
+            print() 
+            continue 
+        else: 
+            wit = int(input("Enter amount to be withdrawn  : ")) 
+            while balance-wit<1000: 
+                print(f"Insufficient balance !! There should be a minimum amount of 1000 present in the account, Your current account balance is {balance}") 
+                wit = int(input("Enter new amount to be withdrawn  : ")) 
+            balance-=wit 
+            print("Amount has been withdrawn") 
+            print() 
+    elif c == 3: 
+        print(f"Your account number is {acc_no} and your current balance is {balance}") 
+        print() 
+    elif c == 4: 
+        print("Thank you") 
+        break 
+    else: 
+        print("Enter valid transactional option !!") 
+        print() 
 
 
 
-3. Write a program to create a menu driven banking program. The user should be able to deposit, withdraw & check the balance with necessary condition in place
-
-
-4.Write a program to accept a number from the user & calculate the sum of the numbers until user enters zero.
